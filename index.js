@@ -44,5 +44,18 @@ bot.on('message', msg => {
 
 });
 
-bot.login('NzUyMzU2NjA2ODUwNjI5NzIy.X1WcsQ.F3CGPhc9nfkPrOamqjEb7_N_Vxw');
+
+const fs = require('fs')
+
+fs.readFile('./token.txt', 'utf8' , (err, data) => {
+    if (err) {
+        console.error("cannot locate bot token! Make sure ./token.txt is set correctly")
+        console.error(err)
+        return
+    }
+
+    console.info(data)
+    bot.login(data);
+})
+
 
