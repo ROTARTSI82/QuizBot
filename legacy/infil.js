@@ -91,4 +91,4 @@ bot.on('message', msg => {
 
 });
 
-bot.login('NzUyMzU2NjA2ODUwNjI5NzIy.X1WcsQ.F3CGPhc9nfkPrOamqjEb7_N_Vxw');
+bot.login('');
